@@ -31,7 +31,7 @@ class User(db.Model): # creating table
 @app.route('/',methods=['GET'])
 def index():
     users = User.query.all()
-    return render_template('show_all.html',users=users)
+    return render_template('show_all.html',users=users),200
 
 @app.route('/new',methods=['GET','POST'])
 def new():
@@ -53,8 +53,8 @@ def new():
             db.session.add(user) # insert operation on Db
             db.session.commit()
             flash('Record added sucessfully')
-            return redirect(url_for('index'))
-    return render_template('new.html')
+            return redirect(url_for('index')),200
+    return render_template('new.html'),200
 
 @app.route('/get_user/<int:id>',methods=['GET'])
 def get_user(id):
