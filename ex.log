@@ -1,0 +1,25 @@
+2021-07-10 00:34:38,470::::::INFO::::::app:::::::::database created sucessfully
+2021-07-10 00:34:38,476::::::INFO::::::werkzeug::::::::: * Running on http://127.0.0.1:3000/ (Press CTRL+C to quit)
+2021-07-10 00:34:38,477::::::INFO::::::werkzeug::::::::: * Restarting with stat
+2021-07-10 00:34:38,876::::::INFO::::::app:::::::::database created sucessfully
+2021-07-10 00:34:38,880::::::WARNING::::::werkzeug::::::::: * Debugger is active!
+2021-07-10 00:34:38,881::::::INFO::::::werkzeug::::::::: * Debugger PIN: 107-530-110
+2021-07-10 00:34:58,686::::::INFO::::::app:::::::::Sucessfully fetched all the user
+2021-07-10 00:34:58,699::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:34:58] "GET / HTTP/1.1" 200 -
+2021-07-10 00:34:58,927::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:34:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-07-10 00:35:04,967::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:35:04] "GET /new HTTP/1.1" 200 -
+2021-07-10 00:35:14,725::::::INFO::::::app:::::::::user inserted sucessfully
+2021-07-10 00:35:14,727::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:35:14] "POST /new HTTP/1.1" 200 -
+2021-07-10 00:35:38,679::::::INFO::::::app:::::::::user updated sucessfully
+2021-07-10 00:35:38,680::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:35:38] "[32mPOST /new HTTP/1.1[0m" 302 -
+2021-07-10 00:35:38,698::::::INFO::::::app:::::::::Sucessfully fetched all the user
+2021-07-10 00:35:38,702::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:35:38] "GET / HTTP/1.1" 200 -
+2021-07-10 00:35:43,815::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:35:43] "GET /new HTTP/1.1" 200 -
+2021-07-10 00:35:49,366::::::INFO::::::app:::::::::user inserted sucessfully
+2021-07-10 00:35:49,369::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:35:49] "POST /new HTTP/1.1" 200 -
+2021-07-10 00:35:55,441::::::INFO::::::app:::::::::Sucessfully fetched all the user
+2021-07-10 00:35:55,442::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:35:55] "GET / HTTP/1.1" 200 -
+2021-07-10 00:36:15,734::::::INFO::::::app:::::::::Sucessfully fetched all the user
+2021-07-10 00:36:15,735::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:36:15] "GET / HTTP/1.1" 200 -
+2021-07-10 00:36:17,609::::::INFO::::::app:::::::::Sucessfully fetched all the user
+2021-07-10 00:36:17,610::::::INFO::::::werkzeug:::::::::127.0.0.1 - - [10/Jul/2021 00:36:17] "GET / HTTP/1.1" 200 -
