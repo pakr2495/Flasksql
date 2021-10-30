@@ -15,7 +15,7 @@ pipeline
             {
                 steps
                 {
-                    sh "docker run -p 3000:3000 testflask"
+                    sh "docker run -d -p 3000:3000 testflask"
                 }
                 
             }
