@@ -15,7 +15,16 @@ app.config['SQLALCHEMY_BINDS'] = {   # connect to multiple DB
 app.config['SECRET_KEY'] = 'HiHelloBye'
 
 
-logging.basicConfig(filename='ex.log',level=logging.DEBUG,format=f'%(asctime)s::::::%(levelname)s::::::%(name)s:::::::::%(message)s')
+
+
+#logging.basicConfig(filename='ex.log',level=logging.DEBUG,format=f'%(asctime)s::::::%(levelname)s::::::%(name)s:::::::::%(message)s')
+handler = logging.FileHandler('test1.log')
+handler.setLevel(logging.DEBUG)
+app.logger.addHandler(handler)
+
+
+
+
 
 db = SQLAlchemy(app)
 
@@ -94,6 +103,7 @@ def delete(id):
 if __name__ == '__main__':
     #db.create_all() create the db
     try:
+        app.logger.setLevel(logging.DEBUG)
         db.create_all(bind='usersDb') # reterive the particular Db
         app.logger.info('database created sucessfully')
     except Exception as e:
@@ -101,6 +111,12 @@ if __name__ == '__main__':
 
     # db.drop_all() delete the db
     app.run(port=3000,debug=True)
+
+if __name__ != '__main__':
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
+    #app.run(port=3000,debug=True)
           
         
 

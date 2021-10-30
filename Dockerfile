@@ -9,3 +9,7 @@ RUN pip install -r requirements.txt
 EXPOSE 3000
 
 CMD ["gunicorn","app:app","--bind=0.0.0.0:3000","--workers=5"]
+
+#ENTRYPOINT [ "python3" ]
+
+#CMD ["app.py"]
