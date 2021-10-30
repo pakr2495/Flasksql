@@ -7,7 +7,7 @@ pipeline
             {
                steps
                {
-                   sh "sudo docker build -t testflask ."
+                   sh "docker build -t testflask ."
                }
                 
             }
@@ -15,7 +15,7 @@ pipeline
             {
                 steps
                 {
-                    sh "sudo docker run -p 3000:3000 testflask"
+                    sh "docker run -p 3000:3000 testflask"
                 }
                 
             }
