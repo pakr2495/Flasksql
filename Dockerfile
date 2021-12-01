@@ -1,10 +1,19 @@
 FROM python:3.8-slim
 
-WORKDIR /root/app/flaskex
+RUN adduser --disabled-password --gecos "" pavan
+
+RUN mkdir -p /user/pavan/flaskex
+
+WORKDIR /user/pavan/flaskex
 
 COPY  . .
 
+RUN chmod -R 444 /user/pavan/flaskex
+
+
 RUN pip install -r requirements.txt
+
+USER pavan
 
 EXPOSE 3000
 
