@@ -1,19 +1,19 @@
 FROM python:3.8-slim
 
-RUN adduser --disabled-password --gecos "" pavan
+#RUN adduser --disabled-password --gecos "" pavan
 
-RUN mkdir -p /user/pavan/flaskex
+RUN mkdir -p /user/root/flaskex
 
-WORKDIR /user/pavan/flaskex
+WORKDIR /user/root/flaskex
 
 COPY  . .
 
-RUN chmod -R 444 /user/pavan/flaskex
+#RUN chmod -R 444 /user/pavan/flaskex
 
 
 RUN pip install -r requirements.txt
 
-USER pavan
+#USER pavan
 
 EXPOSE 3000
 

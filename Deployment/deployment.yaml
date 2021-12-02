@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myflaskapp
-        image: pakr007/pakr007images:flaskkube
+        image: pakr007/pakr007images:flaskex
         resources:
           limits:
             memory: "128Mi"

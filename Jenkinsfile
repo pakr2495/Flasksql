@@ -3,6 +3,13 @@ pipeline
     agent any
         stages
         {
+            stage('test')
+            {
+                steps
+                {
+                    sh "py.test --junitxml results.xml test.py"
+                }
+            }
             stage('Docker Build')
             {
                steps
