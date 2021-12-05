@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "mykubecluster-7fd5"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "mykubecluster-7fd5"
+  template:
+    metadata:
+      labels:
+        app: "mykubecluster-7fd5"
+    spec:
+      containers:
+        - name: "mykubecluster-7fd5"
+          image: "myregforlearn.azurecr.io/mykubecluster"
+          ports:
+          - containerPort: 3000
